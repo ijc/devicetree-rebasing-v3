@@ -245,7 +245,7 @@
 			status = "disabled";
 		};
 
-		power-controller@4b000000 {
+		poweroff@4b000000 {
 			compatible = "cortina,gemini-power-controller";
 			reg = <0x4b000000 0x100>;
 			interrupts = <26 IRQ_TYPE_EDGE_RISING>;
