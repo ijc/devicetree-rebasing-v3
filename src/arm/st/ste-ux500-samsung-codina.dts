@@ -22,6 +22,7 @@
 #include "ste-db8500.dtsi"
 #include "ste-ab8500.dtsi"
 #include "ste-dbx5x0-pinctrl.dtsi"
+#include "ste-ux500-samsung.dtsi"
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/input/input.h>
@@ -665,6 +666,26 @@
 			};
 		};
 	};
+};
+
+&samsung_playback_cpu {
+	dai-format = "dsp_b";
+	dai-tdm-slot-num = <16>;
+	dai-tdm-slot-tx-mask = <0 1 0 1>;
+};
+
+&samsung_codec_playback {
+	dai-tdm-slot-num = <16>;
+	dai-tdm-slot-tx-mask = <0 1 0 1>;
+};
+
+&samsung_capture_cpu {
+	dai-format = "dsp_b";
+	dai-tdm-slot-num = <16>;
+};
+
+&samsung_codec_capture {
+	dai-tdm-slot-num = <16>;
 };
 
 &pinctrl {
