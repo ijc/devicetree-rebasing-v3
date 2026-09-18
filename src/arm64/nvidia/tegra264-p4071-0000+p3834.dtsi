@@ -23,6 +23,20 @@
 		};
 	};
 
+	bus@8100000000 {
+		i2c@c640000 {
+			eeprom@56 {
+				compatible = "atmel,24c02";
+				reg = <0x56>;
+				label = "system";
+				address-width = <8>;
+				pagesize = <8>;
+				size = <256>;
+				read-only;
+			};
+		};
+	};
+
 	fan: pwm-fan {
 		compatible = "pwm-fan";
 		cooling-levels = <77 102 140 192 255>;
