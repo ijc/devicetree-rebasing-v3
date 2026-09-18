@@ -38,6 +38,20 @@
 		cmdqv@6200000 {
 			status = "okay";
 		};
+
+		i2c@c640000 {
+			status = "okay";
+
+			eeprom@50 {
+				compatible = "atmel,24c02";
+				reg = <0x50>;
+				label = "module";
+				address-width = <8>;
+				pagesize = <8>;
+				size = <256>;
+				read-only;
+			};
+		};
 	};
 
 	thermal-zones {
