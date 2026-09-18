@@ -54,6 +54,17 @@
 		};
 	};
 
+	bpmp {
+		i2c {
+			status = "okay";
+
+			thermal-sensor@4c {
+				compatible = "ti,tmp451";
+				reg = <0x4c>;
+			};
+		};
+	};
+
 	thermal-zones {
 		cpu-thermal {
 			polling-delay-passive = <40>;
