@@ -3295,7 +3295,6 @@
 					required-opps = <&rpmhpd_opp_svs_l1>;
 				};
 			};
-
 		};
 
 		ufs_mem_phy: phy@1d80000 {

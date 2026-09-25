@@ -120,7 +120,6 @@
 					reg = <2>;
 
 					pmic_glink_dp_out: endpoint {
-						//remote-endpoint = <&usb_dp_qmpphy_dp_in>;
 					};
 				};
 			};
