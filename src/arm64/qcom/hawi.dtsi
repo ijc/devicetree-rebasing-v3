@@ -1859,8 +1859,6 @@
 			qcom,smem-state-names = "stop",
 						"ping";
 
-			status = "disabled";
-
 			glink-edge {
 				interrupts-extended = <&ipcc IPCC_MPROC_SOCCP
 							     IPCC_MPROC_SIGNAL_GLINK_QMP

@@ -910,8 +910,6 @@
 &remoteproc_soccp {
 	firmware-name = "qcom/hawi/soccp.mbn",
 			"qcom/hawi/soccp_dtb.mbn";
-
-	status = "okay";
 };
 
 &sdhc_2 {
