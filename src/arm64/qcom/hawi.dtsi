@@ -2958,8 +2958,8 @@
 
 			operating-points-v2 = <&pcie0_opp_table>;
 
-			iommu-map = <0 &apps_smmu 0x1000 0x1>,
-				    <0x100 &apps_smmu 0x1001 0x1>;
+			iommu-map = <0 &apps_smmu 0x1000 0x0 0x1>,
+				    <0x100 &apps_smmu 0x1001 0x0 0x1>;
 
 			interrupt-map = <0 0 0 1 &intc 0 0 GIC_ESPI 213 IRQ_TYPE_LEVEL_HIGH>,
 					<0 0 0 2 &intc 0 0 GIC_ESPI 214 IRQ_TYPE_LEVEL_HIGH>,
@@ -3140,8 +3140,8 @@
 
 			operating-points-v2 = <&pcie1_opp_table>;
 
-			iommu-map = <0 &apps_smmu 0x1080 0x1>,
-				    <0x100 &apps_smmu 0x1081 0x1>;
+			iommu-map = <0 &apps_smmu 0x1080 0x0 0x1>,
+				    <0x100 &apps_smmu 0x1081 0x0 0x1>;
 
 			interrupt-map = <0 0 0 1 &intc 0 0 GIC_ESPI 106 IRQ_TYPE_LEVEL_HIGH>,
 					<0 0 0 2 &intc 0 0 GIC_ESPI 107 IRQ_TYPE_LEVEL_HIGH>,
